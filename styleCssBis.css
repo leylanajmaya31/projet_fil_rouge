@@ -1,0 +1,266 @@
+:root{
+    box-sizing: border-box;
+    height: 60px;
+}
+
+
+img{  /*rendre toutes les images de mon site responsives*/
+    max-width: 100%;
+    height: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* ************************************ header ************************************ */
+#logo {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+#headTitle {
+    color: #523634;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-left: 50vh; 
+    text-align: center; 
+    flex-grow: 1; 
+    line-height: 1; 
+    white-space: nowrap;
+}
+
+#navAteliers {
+    display: grid;
+    background-color: #DDC5A2;
+    height: 80px;
+    width: auto;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul a{
+    display: inline-block;
+    padding: 26px;
+    text-decoration: none;
+    color: #B6452C;
+    font-size: 18px;
+}
+
+nav ul a:hover{
+    background-color: #523634;
+    color: white;
+}
+
+/* ***************************** Caroussel ***************************** */
+#carouselExampleCaptions{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  
+  .carousel-item img{
+    width: 100%;
+    height: 30em;
+  }
+  
+
+  .btn-light{
+    background-color: #DDC5A2 !important;
+    border: solid #B6452C !important;
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    border-radius: 25px !important;
+  }
+
+  #mainTitle1{
+    font-style: georgia,verdana;
+    font-size: large;
+    color: #523634;
+    text-align: center;
+    padding: 50px;
+}
+
+hr {
+    margin: 10px 0;
+    background-color: #B6452C;
+    border: 2px;
+    height: 2px;
+    width: 100%;
+}
+
+
+h3>h5>h6{
+    text-align: left;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #523634;
+}
+
+h3{
+    color: #523634;
+}
+h4{
+    color: #B6452C;
+}
+
+p{
+  text-align: left;
+    color: #523634;
+    padding: 10px;  
+    font-family: garamond, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.btn-success{
+    background-color: #DDC5A2 !important;
+    border: solid #B6452C !important;
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    border-radius: 25px !important;
+    color: #523634 !important;
+}
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#DDC5A2;
+  color:#523634;
+  bottom: 0;
+}
+
+  .footer-basic ul {
+    padding:0;
+    display: flex;
+    justify-content: center;
+    list-style:none;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+    color: #B6452C;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #B6452C;
+    margin:0 8px;
+    color:inherit;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity: 0.8;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color: #523634;
+    margin-bottom:0;
+  }
+  /* *************************** Laboratoires *************************** */
+  #laboToulouse{
+    width: 50%;
+    height: 400px;
+    padding: 30px;
+  }
+
+  .mainTitleh3{
+    padding: 10px;
+  }
+
+  p{
+    font-size: larger;
+    text-align: center;
+    font-family: garamond;
+    margin-bottom: 10px;
+  }
+  /* *************************** Boutons *************************** */
+  button {
+    border: none;
+    border-radius: 5px;
+    color: #523634;
+    border: solid #B6452C;
+    border-radius: 25px;
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #DDC5A2;
+    box-shadow: 2px 4px #B6452C;
+  }
+
+  .home, .menu, .about {
+    background-color: #DDC5A2;
+  }
+
+.centre{
+    text-align: center;
+}
+
+.space {
+    width: 20px;
+    height: auto;
+    display: inline-block;
+  }
+
+  .bx-map{
+    font-size: large;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    color: #B6452C;
+    margin-top: 10px;
+  }
+
+.container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+#laboToulouse {
+    max-width: 100%; 
+    margin-right: 20px; 
+}
+
+.content {
+    flex: 1; 
+}

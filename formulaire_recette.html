@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumettre une recette</title>
+    <link rel="stylesheet" href="csstest.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="/images/New_Logo_Share&Cook.png" alt="logo">
+          <h2 id="headTitle"> À vos marques...Prêts...Pâtissez !</h2>
+        </div>
+        <nav>
+          <ul>
+            <li class="active"><a href="#"><i class='bx bx-home' style='color:#b6452c'></i> Accueil</a></li>
+            <li class="menu-deroulant">
+              <a href="#">Recettes</a>
+              <ul class="sous-menu">
+                <li><a href="#">Théme</a>
+                <li><a href="#">Niveaux</a>
+                <li><a href="#">Catégorie</a>
+              </ul>
+            </li>
+            <li class="menu-deroulant">
+              <a href="#">Vidéos</a>
+              <ul class="sous-menu">
+                <li><a href="#">Théme</a>
+                <li><a href="#">Niveaux</a>
+              </ul>
+            </li>
+            <li><a href="ateliers.html">Ateliers</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+            <li class="active"><a href="#"><i class='bx bx-user-circle' style='color:#B6452C'></i> Compte</a></li>
+            <li class="active"><a href="#"><i class='bx bx-cart-download' style='color:#B6452C'></i> Panier</a></li>
+          </ul>
+        </nav>
+    
+      </header>
+
+    <h1> Soumettre une recette </h1>
+    <hr>
+
+    <main class="mainContent">
+
+        <aside class="recipe-details">
+            <h2>Infos clés</h2>
+            <label for="nombrePortions"> Nombre de portions </label>
+            <input type="number" id="nombrePortions" name="nombrePortions">
+            <br>
+            <label for="tempsCuisson"> Temps de préparation </label>
+            <input type="time" id="tempsCuisson" name="tempsCuisson">
+            <br>
+            <label for="tempsCuisson"> Temps de cuisson </label>
+            <input type="number" id="tempsCuisson" name="tempsCuisson">
+            <br>
+        </aside>
+
+    <form action="" method="post" >
+        <label for="nomRecette"> Nom de la recette *</label>
+        <input type="text" id="nomRecette" name="nomRecette" required>
+        <br>
+        <label for="ingredients"> Ingrédients *</label>
+        <textarea id="ingredients" name="ingredients" required></textarea>
+        <br>
+        <label for="etapes"> Description de la recette *</label>
+        <textarea id="etapes" name="etapes"required placeholder="Ex: Faire fondre le chocolat"></textarea>
+        <label for="etapes"> Conseils </label>
+        <textarea id="conseil" name="conseil"></textarea>
+        <label for="categorie"> Catégorie *</label>
+        <select id="categorie" name="categorie" required>
+            <option value="choix"> Catégories</option>
+            <option value="pain"> Pain</option>
+            <option value="petit-déjeuner"> Petit-déjeuner</option>
+            <option value="gâteaux"> Gâteaux</option>
+            <option value="biscuits"> Biscuits</option>
+            <option value="tartes"> Tartes</option> 
+        </select>
+        <br>
+
+        <div class="radio-container">
+            <label for="niveau"> Niveau de difficulté *</label>
+            <div class="radio-group">
+                <input type="radio" id="debutant" name="niveau" value="debutant"> <label for="debutant"> Débutant</label>
+                <input type="radio" id="intermediaire" name="niveau" value="intermediaire"> <label for="intermediaire">Intermédiaire</label>
+                <input type="radio" id="expert" name="niveau" value="expert"> <label for="expert"> Expert</label>
+            </div>
+        </div>
+
+        <br>
+        <label for="photoRecette"> Photo de la recette </label>
+        <input type="file" id="photoRecette" name="photoRecette" accept="image/*">
+        <br>
+        <button type="submit"> SOUMETTRE LA RECETTE </button>
+    </form>
+</main>
+
+
+ <!-- **************************** Footer ****************************  -->
+
+ 
+    <footer class="footer-basic">
+      <div class="social"><a href="#"><i class='bx bxl-youtube' style='color:#b6452c'></i></a><a href="#"><i
+            class='bx bxl-instagram-alt' style='color:#b6452c'></i></a><a href="#"><i class='bx bxl-facebook-circle'
+            style='color:#b6452c'></i></a><a href="#"><i class='bx bxl-pinterest' style='color:#b6452c'></i></a></div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">À propos</a></li>
+        <li class="list-inline-item"><a href="#">Nous contacter</a></li>
+        <li class="list-inline-item"><a href="#">Politique de confidentialité</a></li>
+        <li class="list-inline-item"><a href="#"></a>Mentions légales</li>
+        <li class="list-inline-item"><a href="#">F.A.Q</a></li>
+      </ul>
+      <p class="copyright">Share &amp;Cook © 2023</p>
+    </footer>
+</body>
+</html>
+
